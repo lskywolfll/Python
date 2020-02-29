@@ -11,7 +11,7 @@ class Persona(object):
         elif self.edad < persona.edad:
             print(f'{self.nombre} es menor que {persona.nombre} por {persona.edad - self.edad} años')
         else:
-            print(f'{self.nombre} tiene la misma edad que {persona.nombre}!!! 🤯')
+            print(f'{self.nombre} tiene la misma edad que {persona.nombre}!!!')
         
 
 primeraPersona = Persona(input('Cual es tu nombre ?\n'), int(input('Cual es tu edad ?\n')))
