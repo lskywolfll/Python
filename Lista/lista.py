@@ -45,6 +45,19 @@ copiaListaVulnerable = listaVulnerable
 copiaInmutable = list(copiaListaVulnerable)
 print(copiaInmutable)
 listaVulnerable.append(4)
+# lista[posicionInicial:posicionFinal] por el cual hace una ordenanza desde el 1 elemento en adelante
+# lista[::posicionFinal] por el cual este se ordena desde el ultimo elemento en adelante
+print(copiaInmutable[::-1])
+
+# Otra forma de ordenamiento inverso o normal
+copiaInmutable.sort()
+print(copiaInmutable)
+# Este tambien cambia el valor contenido en la lista para que ahora sea inverso
+copiaInmutable.sort(reverse=True)
+print(copiaInmutable)
+
+# Invertir la lista (Modificarla)
+copiaInmutable.reverse()
 print(copiaInmutable)
 
 print(id(listaVulnerable))
