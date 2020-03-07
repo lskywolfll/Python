@@ -17,18 +17,18 @@ my_lista.insert(2, 'Hi!')
 
 my_lista.insert(3, 'Chao')
 
-print(my_lista)
+print(f'Lista inicial: {my_lista}')
 
 my_lista.remove('Adios')
 
-print(my_lista)
+print(f'Lista inicial borrando Adios: {my_lista}')
 
 my_lista.pop(1)
 
-print(my_lista)
+print(f'Lista inicial borrando la posicion 1: {my_lista}')
 
 for cosa in my_lista:
-    print(cosa)
+    print(f'valor dentro de la lista: {cosa}')
 
 # Proteccion de datos de las listas
 
@@ -43,24 +43,24 @@ copiaListaVulnerable = listaVulnerable
 
 # Persistencia de valor
 copiaInmutable = list(copiaListaVulnerable)
-print(copiaInmutable)
+print(f'persistencia del valor usando una copia inmutable: {copiaInmutable}')
 listaVulnerable.append(4)
 # lista[posicionInicial:posicionFinal] por el cual hace una ordenanza desde el 1 elemento en adelante
 # lista[::posicionFinal] por el cual este se ordena desde el ultimo elemento en adelante
-print(copiaInmutable[::-1])
+print(f'ordenamiento inverso usando :: es: {copiaInmutable[::-1]}')
 
 # Otra forma de ordenamiento inverso o normal
 copiaInmutable.sort()
-print(copiaInmutable)
+print(f'ordenamiento: {copiaInmutable}')
 # Este tambien cambia el valor contenido en la lista para que ahora sea inverso
 copiaInmutable.sort(reverse=True)
-print(copiaInmutable)
+print(f'ordenamiento inverso: {copiaInmutable}')
 
 # Invertir la lista (Modificarla)
 copiaInmutable.reverse()
-print(copiaInmutable)
+print(f'invertido: {copiaInmutable}')
 
-print(id(listaVulnerable))
-print(id(copiaInmutable))
+print(f'identificador del objeto lista vulnerable: {id(listaVulnerable)}')
+print(f'identificador del objeto copiaInmutable: {id(copiaInmutable)}')
 
 # print(copiaDeValores)
